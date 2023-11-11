@@ -1,0 +1,130 @@
+header{
+  background-image: linear-gradient(rgba(214, 228, 214, 0.418),rgb(161, 161, 236));
+}
+nav{
+    width:110%;
+    height:70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    position: fixed;
+   
+
+}
+
+header nav ul li {
+    position: relative;
+    padding: 38px 20px;
+  }
+  
+  header nav ul li a {
+    position: relative;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    
+    color: black !important;
+    font-weight: 500;
+  }
+  
+  header nav ul li a::after {
+    content: "";
+    -webkit-transition: width .3s;
+    transition: width .3s;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0;
+    height: 1px;
+    background-color: black;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: none;
+  }
+  
+  header nav ul li a:hover::after {
+    width: 80%;
+  }
+  main{
+    background-color: rgb(193, 218, 230);
+  }
+  footer{
+    background-color: rgb(172, 199, 211);
+  }
+  .footerContainer{
+    width:100%;
+    padding: 70px 30px 20px;
+  }
+  .socialIcons{
+    display: flex;
+    justify-content: center;
+  }
+  .socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(2, 2, 68);
+    margin:18px;
+    border-radius:50% ;
+  }
+  .socialIcons a i{
+    font-size: 2em;
+    color: white;
+    opacity: 0.9;
+  }
+  .socialIcons a:hover{
+    background-color: rgb(8, 8, 209);
+    transition: 0.5s;
+  }
+  .socialIcons a:hover i{
+    background-color: rgb(8, 8, 209);
+    transition: 0.5s;
+  }
+  .footerNav{
+    margin: 30px 0;
+  }
+  .footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  .footerNav ul li a{
+    color:rgb(2, 2, 68);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .footerNav ul li a:hover{
+    opacity: 1;
+  }
+  .footerBottom{
+background-color: rgb(138, 171, 185);
+padding:20px;
+text-align: center;
+ }
+ .footerBottom p{
+  color:rgb(2, 2, 68);
+ }
+ .designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 8px 5px ;
+ }
+ @media(max-width:700px){
+  .footerNav ul{
+    flex-direction: column;
+  }
+  .footerNav ul li{
+    width:100%;
+    text-align: center;
+    margin: 10px;
+  }
+ }
+ 
